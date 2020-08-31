@@ -1,0 +1,1028 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FAttachLeaderboardUGCData;
+struct FLeaderboardScoresDownloadedForUsers;
+struct FRequestUserStatsData;
+struct FFindOrCreateLeaderboardData;
+struct FLeaderboardScoreUploaded;
+struct FNumberOfCurrentPlayers;
+struct FGlobalAchievementPercentagesReady;
+struct FGlobalStatsReceived;
+struct FLeaderboardScoresDownloaded;
+struct FLeaderboardFindResult;
+class UObject;
+class USteamCoreUserStatsAsyncActionFindLeaderboard;
+struct FSteamLeaderboard;
+enum class ESteamLeaderboardDataRequest : uint8;
+class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries;
+class USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats;
+class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages;
+class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers;
+enum class ESteamLeaderboardUploadScoreMethod : uint8;
+class USteamCoreUserStatsAsyncActionUploadLeaderboardScore;
+enum class ESteamLeaderboardSortMethod : uint8;
+enum class ESteamLeaderboardDisplayType : uint8;
+class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard;
+struct FSteamID;
+class USteamCoreUserStatsAsyncActionRequestUserStats;
+class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers;
+struct FSteamUGCHandle;
+class USteamCoreUserStatsAsyncActionAttachLeaderboardUGC;
+#ifdef STEAMCORE_UserStatsAsyncActions_generated_h
+#error "UserStatsAsyncActions.generated.h already included, missing '#pragma once' in UserStatsAsyncActions.h"
+#endif
+#define STEAMCORE_UserStatsAsyncActions_generated_h
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_26_DELEGATE \
+struct _Script_SteamCore_eventOnAttachLeaderboardUGCAsyncDelegate_Parms \
+{ \
+	FAttachLeaderboardUGCData data; \
+}; \
+static inline void FOnAttachLeaderboardUGCAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnAttachLeaderboardUGCAsyncDelegate, FAttachLeaderboardUGCData const& data) \
+{ \
+	_Script_SteamCore_eventOnAttachLeaderboardUGCAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnAttachLeaderboardUGCAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_25_DELEGATE \
+struct _Script_SteamCore_eventOnDownloadLeaderboardEntriesForUsersAsyncDelegate_Parms \
+{ \
+	FLeaderboardScoresDownloadedForUsers data; \
+}; \
+static inline void FOnDownloadLeaderboardEntriesForUsersAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnDownloadLeaderboardEntriesForUsersAsyncDelegate, FLeaderboardScoresDownloadedForUsers const& data) \
+{ \
+	_Script_SteamCore_eventOnDownloadLeaderboardEntriesForUsersAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnDownloadLeaderboardEntriesForUsersAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_24_DELEGATE \
+struct _Script_SteamCore_eventOnRequestUserStatsAsyncDelegate_Parms \
+{ \
+	FRequestUserStatsData data; \
+}; \
+static inline void FOnRequestUserStatsAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnRequestUserStatsAsyncDelegate, FRequestUserStatsData const& data) \
+{ \
+	_Script_SteamCore_eventOnRequestUserStatsAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnRequestUserStatsAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_23_DELEGATE \
+struct _Script_SteamCore_eventOnFindOrCreateLeaderboardAsyncDelegate_Parms \
+{ \
+	FFindOrCreateLeaderboardData data; \
+}; \
+static inline void FOnFindOrCreateLeaderboardAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnFindOrCreateLeaderboardAsyncDelegate, FFindOrCreateLeaderboardData const& data) \
+{ \
+	_Script_SteamCore_eventOnFindOrCreateLeaderboardAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnFindOrCreateLeaderboardAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_22_DELEGATE \
+struct _Script_SteamCore_eventOnUploadLeaderboardScoreAsyncDelegate_Parms \
+{ \
+	FLeaderboardScoreUploaded data; \
+}; \
+static inline void FOnUploadLeaderboardScoreAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnUploadLeaderboardScoreAsyncDelegate, FLeaderboardScoreUploaded const& data) \
+{ \
+	_Script_SteamCore_eventOnUploadLeaderboardScoreAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnUploadLeaderboardScoreAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_21_DELEGATE \
+struct _Script_SteamCore_eventOnGetNumberOfCurrentPlayersAsyncDelegate_Parms \
+{ \
+	FNumberOfCurrentPlayers data; \
+}; \
+static inline void FOnGetNumberOfCurrentPlayersAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnGetNumberOfCurrentPlayersAsyncDelegate, FNumberOfCurrentPlayers const& data) \
+{ \
+	_Script_SteamCore_eventOnGetNumberOfCurrentPlayersAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnGetNumberOfCurrentPlayersAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_20_DELEGATE \
+struct _Script_SteamCore_eventOnRequestGlobalAchievementPercentagesAsyncDelegate_Parms \
+{ \
+	FGlobalAchievementPercentagesReady data; \
+}; \
+static inline void FOnRequestGlobalAchievementPercentagesAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnRequestGlobalAchievementPercentagesAsyncDelegate, FGlobalAchievementPercentagesReady const& data) \
+{ \
+	_Script_SteamCore_eventOnRequestGlobalAchievementPercentagesAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnRequestGlobalAchievementPercentagesAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_19_DELEGATE \
+struct _Script_SteamCore_eventOnRequestGlobalStatsAsyncDelegate_Parms \
+{ \
+	FGlobalStatsReceived data; \
+}; \
+static inline void FOnRequestGlobalStatsAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnRequestGlobalStatsAsyncDelegate, FGlobalStatsReceived const& data) \
+{ \
+	_Script_SteamCore_eventOnRequestGlobalStatsAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnRequestGlobalStatsAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_18_DELEGATE \
+struct _Script_SteamCore_eventOnDownloadLeaderboardEntriesAsyncDelegate_Parms \
+{ \
+	FLeaderboardScoresDownloaded data; \
+}; \
+static inline void FOnDownloadLeaderboardEntriesAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnDownloadLeaderboardEntriesAsyncDelegate, FLeaderboardScoresDownloaded const& data) \
+{ \
+	_Script_SteamCore_eventOnDownloadLeaderboardEntriesAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnDownloadLeaderboardEntriesAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_17_DELEGATE \
+struct _Script_SteamCore_eventOnFindLeaderboardAsyncDelegate_Parms \
+{ \
+	FLeaderboardFindResult data; \
+}; \
+static inline void FOnFindLeaderboardAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnFindLeaderboardAsyncDelegate, FLeaderboardFindResult const& data) \
+{ \
+	_Script_SteamCore_eventOnFindLeaderboardAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnFindLeaderboardAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execFindLeaderboardAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execFindLeaderboardAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionFindLeaderboard(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionFindLeaderboard_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionFindLeaderboard, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionFindLeaderboard)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionFindLeaderboard(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionFindLeaderboard_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionFindLeaderboard, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionFindLeaderboard)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionFindLeaderboard(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionFindLeaderboard) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionFindLeaderboard); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionFindLeaderboard); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionFindLeaderboard(USteamCoreUserStatsAsyncActionFindLeaderboard&&); \
+	NO_API USteamCoreUserStatsAsyncActionFindLeaderboard(const USteamCoreUserStatsAsyncActionFindLeaderboard&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionFindLeaderboard(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionFindLeaderboard(USteamCoreUserStatsAsyncActionFindLeaderboard&&); \
+	NO_API USteamCoreUserStatsAsyncActionFindLeaderboard(const USteamCoreUserStatsAsyncActionFindLeaderboard&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionFindLeaderboard); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionFindLeaderboard); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionFindLeaderboard)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_31_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_34_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionFindLeaderboard>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execDownloadLeaderboardEntriesAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execDownloadLeaderboardEntriesAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries&&); \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(const USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries&&); \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries(const USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_57_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_60_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntries>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestGlobalStatsAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestGlobalStatsAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats&&); \
+	NO_API USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(const USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats&&); \
+	NO_API USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats(const USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_87_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_90_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestGlobalAchievementPercentagesAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestGlobalAchievementPercentagesAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages&&); \
+	NO_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(const USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages&&); \
+	NO_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages(const USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_111_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_114_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execGetNumberOfCurrentPlayersAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execGetNumberOfCurrentPlayersAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers&&); \
+	NO_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(const USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers&&); \
+	NO_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers(const USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_134_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_137_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execUploadLeaderboardScoreAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execUploadLeaderboardScoreAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionUploadLeaderboardScore(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionUploadLeaderboardScore_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionUploadLeaderboardScore, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionUploadLeaderboardScore)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionUploadLeaderboardScore(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionUploadLeaderboardScore_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionUploadLeaderboardScore, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionUploadLeaderboardScore)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionUploadLeaderboardScore) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionUploadLeaderboardScore); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionUploadLeaderboardScore); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore(USteamCoreUserStatsAsyncActionUploadLeaderboardScore&&); \
+	NO_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore(const USteamCoreUserStatsAsyncActionUploadLeaderboardScore&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore(USteamCoreUserStatsAsyncActionUploadLeaderboardScore&&); \
+	NO_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore(const USteamCoreUserStatsAsyncActionUploadLeaderboardScore&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionUploadLeaderboardScore); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionUploadLeaderboardScore); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionUploadLeaderboardScore)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_156_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_159_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionUploadLeaderboardScore>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execFindOrCreateLeaderboardAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execFindOrCreateLeaderboardAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard&&); \
+	NO_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(const USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard&&); \
+	NO_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard(const USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_185_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_188_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestUserStatsAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestUserStatsAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionRequestUserStats(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionRequestUserStats_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionRequestUserStats, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionRequestUserStats)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionRequestUserStats(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionRequestUserStats_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionRequestUserStats, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionRequestUserStats)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestUserStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionRequestUserStats) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionRequestUserStats); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionRequestUserStats); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestUserStats(USteamCoreUserStatsAsyncActionRequestUserStats&&); \
+	NO_API USteamCoreUserStatsAsyncActionRequestUserStats(const USteamCoreUserStatsAsyncActionRequestUserStats&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestUserStats(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionRequestUserStats(USteamCoreUserStatsAsyncActionRequestUserStats&&); \
+	NO_API USteamCoreUserStatsAsyncActionRequestUserStats(const USteamCoreUserStatsAsyncActionRequestUserStats&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionRequestUserStats); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionRequestUserStats); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionRequestUserStats)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_218_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_221_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionRequestUserStats>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execDownloadLeaderboardEntriesForUsersAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execDownloadLeaderboardEntriesForUsersAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers&&); \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(const USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers&&); \
+	NO_API USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers(const USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_245_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_248_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execAttachLeaderboardUGCAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execAttachLeaderboardUGCAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionAttachLeaderboardUGC(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionAttachLeaderboardUGC_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreUserStatsAsyncActionAttachLeaderboardUGC(); \
+	friend struct Z_Construct_UClass_USteamCoreUserStatsAsyncActionAttachLeaderboardUGC_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionAttachLeaderboardUGC(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionAttachLeaderboardUGC); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionAttachLeaderboardUGC(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC&&); \
+	NO_API USteamCoreUserStatsAsyncActionAttachLeaderboardUGC(const USteamCoreUserStatsAsyncActionAttachLeaderboardUGC&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreUserStatsAsyncActionAttachLeaderboardUGC(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreUserStatsAsyncActionAttachLeaderboardUGC(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC&&); \
+	NO_API USteamCoreUserStatsAsyncActionAttachLeaderboardUGC(const USteamCoreUserStatsAsyncActionAttachLeaderboardUGC&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreUserStatsAsyncActionAttachLeaderboardUGC); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreUserStatsAsyncActionAttachLeaderboardUGC)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_272_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h_275_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreUserStatsAsyncActionAttachLeaderboardUGC>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID HostProject_Plugins_SteamCore_Source_SteamCore_Public_UserStats_UserStatsAsyncActions_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

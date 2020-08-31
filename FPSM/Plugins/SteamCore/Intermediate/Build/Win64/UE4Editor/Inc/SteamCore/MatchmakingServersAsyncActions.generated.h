@@ -1,0 +1,333 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FGameServerRule;
+struct FGameServerItem;
+class UObject;
+class USteamCoreMatchmakingServersAsyncActionPingServer;
+class UServerFilter;
+class USteamCoreMatchmakingServersAsyncActionRequestServerList;
+class USteamCoreMatchmakingServersAsyncActionServerRules;
+#ifdef STEAMCORE_MatchmakingServersAsyncActions_generated_h
+#error "MatchmakingServersAsyncActions.generated.h already included, missing '#pragma once' in MatchmakingServersAsyncActions.h"
+#endif
+#define STEAMCORE_MatchmakingServersAsyncActions_generated_h
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_18_DELEGATE \
+struct _Script_SteamCore_eventOnServerRuleAsyncDelegate_Parms \
+{ \
+	TArray<FGameServerRule> data; \
+}; \
+static inline void FOnServerRuleAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnServerRuleAsyncDelegate, TArray<FGameServerRule> const& data) \
+{ \
+	_Script_SteamCore_eventOnServerRuleAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnServerRuleAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_17_DELEGATE \
+struct _Script_SteamCore_eventOnServersFinishedAsyncDelegate_Parms \
+{ \
+	TArray<FGameServerItem> data; \
+}; \
+static inline void FOnServersFinishedAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnServersFinishedAsyncDelegate, TArray<FGameServerItem> const& data) \
+{ \
+	_Script_SteamCore_eventOnServersFinishedAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnServersFinishedAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_16_DELEGATE \
+struct _Script_SteamCore_eventOnPingServerAsyncDelegate_Parms \
+{ \
+	FGameServerItem data; \
+}; \
+static inline void FOnPingServerAsyncDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnPingServerAsyncDelegate, FGameServerItem const& data) \
+{ \
+	_Script_SteamCore_eventOnPingServerAsyncDelegate_Parms Parms; \
+	Parms.data=data; \
+	OnPingServerAsyncDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execPingServerAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execPingServerAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreMatchmakingServersAsyncActionPingServer(); \
+	friend struct Z_Construct_UClass_USteamCoreMatchmakingServersAsyncActionPingServer_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreMatchmakingServersAsyncActionPingServer, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreMatchmakingServersAsyncActionPingServer)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreMatchmakingServersAsyncActionPingServer(); \
+	friend struct Z_Construct_UClass_USteamCoreMatchmakingServersAsyncActionPingServer_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreMatchmakingServersAsyncActionPingServer, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreMatchmakingServersAsyncActionPingServer)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionPingServer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreMatchmakingServersAsyncActionPingServer) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreMatchmakingServersAsyncActionPingServer); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreMatchmakingServersAsyncActionPingServer); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionPingServer(USteamCoreMatchmakingServersAsyncActionPingServer&&); \
+	NO_API USteamCoreMatchmakingServersAsyncActionPingServer(const USteamCoreMatchmakingServersAsyncActionPingServer&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionPingServer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionPingServer(USteamCoreMatchmakingServersAsyncActionPingServer&&); \
+	NO_API USteamCoreMatchmakingServersAsyncActionPingServer(const USteamCoreMatchmakingServersAsyncActionPingServer&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreMatchmakingServersAsyncActionPingServer); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreMatchmakingServersAsyncActionPingServer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreMatchmakingServersAsyncActionPingServer)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_23_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_26_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreMatchmakingServersAsyncActionPingServer>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleServerListFinished); \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestSpectatorServerListAsync); \
+	DECLARE_FUNCTION(execRequestLANServerListAsync); \
+	DECLARE_FUNCTION(execRequestInternetServerListAsync); \
+	DECLARE_FUNCTION(execRequestHistoryServerListAsync); \
+	DECLARE_FUNCTION(execRequestFriendsServerListAsync); \
+	DECLARE_FUNCTION(execRequestFavoritesServerListAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleServerListFinished); \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execRequestSpectatorServerListAsync); \
+	DECLARE_FUNCTION(execRequestLANServerListAsync); \
+	DECLARE_FUNCTION(execRequestInternetServerListAsync); \
+	DECLARE_FUNCTION(execRequestHistoryServerListAsync); \
+	DECLARE_FUNCTION(execRequestFriendsServerListAsync); \
+	DECLARE_FUNCTION(execRequestFavoritesServerListAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreMatchmakingServersAsyncActionRequestServerList(); \
+	friend struct Z_Construct_UClass_USteamCoreMatchmakingServersAsyncActionRequestServerList_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreMatchmakingServersAsyncActionRequestServerList, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreMatchmakingServersAsyncActionRequestServerList)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreMatchmakingServersAsyncActionRequestServerList(); \
+	friend struct Z_Construct_UClass_USteamCoreMatchmakingServersAsyncActionRequestServerList_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreMatchmakingServersAsyncActionRequestServerList, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreMatchmakingServersAsyncActionRequestServerList)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionRequestServerList(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreMatchmakingServersAsyncActionRequestServerList) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreMatchmakingServersAsyncActionRequestServerList); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreMatchmakingServersAsyncActionRequestServerList); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionRequestServerList(USteamCoreMatchmakingServersAsyncActionRequestServerList&&); \
+	NO_API USteamCoreMatchmakingServersAsyncActionRequestServerList(const USteamCoreMatchmakingServersAsyncActionRequestServerList&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionRequestServerList(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionRequestServerList(USteamCoreMatchmakingServersAsyncActionRequestServerList&&); \
+	NO_API USteamCoreMatchmakingServersAsyncActionRequestServerList(const USteamCoreMatchmakingServersAsyncActionRequestServerList&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreMatchmakingServersAsyncActionRequestServerList); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreMatchmakingServersAsyncActionRequestServerList); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreMatchmakingServersAsyncActionRequestServerList)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_49_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_52_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreMatchmakingServersAsyncActionRequestServerList>();
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_SPARSE_DATA
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execServerRulesAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandleCallback); \
+	DECLARE_FUNCTION(execServerRulesAsync);
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUSteamCoreMatchmakingServersAsyncActionServerRules(); \
+	friend struct Z_Construct_UClass_USteamCoreMatchmakingServersAsyncActionServerRules_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreMatchmakingServersAsyncActionServerRules, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreMatchmakingServersAsyncActionServerRules)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_INCLASS \
+private: \
+	static void StaticRegisterNativesUSteamCoreMatchmakingServersAsyncActionServerRules(); \
+	friend struct Z_Construct_UClass_USteamCoreMatchmakingServersAsyncActionServerRules_Statics; \
+public: \
+	DECLARE_CLASS(USteamCoreMatchmakingServersAsyncActionServerRules, USteamCoreAsyncAction, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/SteamCore"), NO_API) \
+	DECLARE_SERIALIZER(USteamCoreMatchmakingServersAsyncActionServerRules)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionServerRules(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreMatchmakingServersAsyncActionServerRules) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreMatchmakingServersAsyncActionServerRules); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreMatchmakingServersAsyncActionServerRules); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionServerRules(USteamCoreMatchmakingServersAsyncActionServerRules&&); \
+	NO_API USteamCoreMatchmakingServersAsyncActionServerRules(const USteamCoreMatchmakingServersAsyncActionServerRules&); \
+public:
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionServerRules(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API USteamCoreMatchmakingServersAsyncActionServerRules(USteamCoreMatchmakingServersAsyncActionServerRules&&); \
+	NO_API USteamCoreMatchmakingServersAsyncActionServerRules(const USteamCoreMatchmakingServersAsyncActionServerRules&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, USteamCoreMatchmakingServersAsyncActionServerRules); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USteamCoreMatchmakingServersAsyncActionServerRules); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamCoreMatchmakingServersAsyncActionServerRules)
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_119_PROLOG
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_RPC_WRAPPERS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_INCLASS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_SPARSE_DATA \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h_122_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> STEAMCORE_API UClass* StaticClass<class USteamCoreMatchmakingServersAsyncActionServerRules>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID HostProject_Plugins_SteamCore_Source_SteamCore_Public_MatchmakingServers_MatchmakingServersAsyncActions_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

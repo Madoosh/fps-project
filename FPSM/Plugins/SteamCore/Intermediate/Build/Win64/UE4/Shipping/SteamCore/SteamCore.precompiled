@@ -1,0 +1,20 @@
+{
+	"OutputFiles": [
+		"PCH.SteamCore.h.obj",
+		"Module.SteamCore.cpp.obj",
+		"Module.SteamCore.gen.1_of_14.cpp.obj",
+		"Module.SteamCore.gen.2_of_14.cpp.obj",
+		"Module.SteamCore.gen.3_of_14.cpp.obj",
+		"Module.SteamCore.gen.4_of_14.cpp.obj",
+		"Module.SteamCore.gen.5_of_14.cpp.obj",
+		"Module.SteamCore.gen.6_of_14.cpp.obj",
+		"Module.SteamCore.gen.7_of_14.cpp.obj",
+		"Module.SteamCore.gen.8_of_14.cpp.obj",
+		"Module.SteamCore.gen.9_of_14.cpp.obj",
+		"Module.SteamCore.gen.10_of_14.cpp.obj",
+		"Module.SteamCore.gen.11_of_14.cpp.obj",
+		"Module.SteamCore.gen.12_of_14.cpp.obj",
+		"Module.SteamCore.gen.13_of_14.cpp.obj",
+		"Module.SteamCore.gen.14_of_14.cpp.obj"
+	]
+}
