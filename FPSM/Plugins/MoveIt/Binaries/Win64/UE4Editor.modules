@@ -1,0 +1,9 @@
+{
+	"BuildId": "13144385",
+	"Modules": 
+	{
+		"MoveIt": "UE4Editor-MoveIt.dll",
+		"MoveItEditor": "UE4Editor-MoveItEditor.dll",
+		"MoveItEditorTools": "UE4Editor-MoveItEditorTools.dll"
+	}
+}
